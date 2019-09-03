@@ -1,0 +1,9 @@
+[Unit]
+Description=DHT11 python service
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/handson/dht11gettemp.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
